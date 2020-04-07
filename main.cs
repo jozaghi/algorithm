@@ -11,7 +11,8 @@ class MainClass {
   public static void Run(){
     var algorithms = new IRunnable[]{
       new StringHassAllUniqueCharacters(),
-      new StringIsPermutationOfOther()
+      new StringIsPermutationOfOther(),
+      new Urlify()
     };
     foreach(var algorithm in algorithms){
       var results = algorithm.Run().ToList();

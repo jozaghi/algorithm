@@ -12,6 +12,7 @@ namespace ArraysAndStrings
       yield return Check.IsFalse(CheckChars("aili"));
       yield return Check.IsFalse(CheckChars("aila"));
     }
+    
     public bool CheckChars(string input){
       var charMap = new HashSet<Char>();
       foreach(char character in input){

@@ -12,5 +12,11 @@ namespace Helper{
         Response.Ok():
         Response.Fail("statement most be 'false' given 'true'");
     }
+
+    public static Response AreEqual(this string first, string second){
+      return first == second ?
+        Response.Ok():
+        Response.Fail($"'{first}' and '{second}' are not equal.");
+    }
   }
 }
